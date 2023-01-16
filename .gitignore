@@ -2,3 +2,5 @@ db.sqlite3
 local_settings.py
 .vscode
 vscode/
+.flake8
+static
