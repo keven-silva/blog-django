@@ -8,6 +8,7 @@ Blog desenvolvido com o framework django, boostrap e sqlite3. O blog possui aces
 - Cadastro de comentários
 - Filtro de posts
 - Mensagem de validação
+- Testes unitários
 
 ## Execução do código
     python manage.py makemigrations

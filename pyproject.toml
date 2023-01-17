@@ -13,9 +13,16 @@ django-seed = "^0.3.1"
 Pillow = "^9.4.0"
 django-summernote = "^0.8.20.0"
 psycopg2-binary = "^2.9.5"
+requests = "^2.28.2"
+pytest-django = "^4.5.2"
+pytest-cov = "^4.0.0"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/"]
+DJANGO_SETTINGS_MODULE = "blog.settings"
 
 [build-system]
 requires = ["poetry-core"]

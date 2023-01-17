@@ -22,10 +22,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('posts.urls')),
-    # path('', include('category.urls')),
-    # path('', include('comments.urls')),
-    # path('', include('posts.urls')),
-    # path('', include('posts.urls')),
     path('admin/', admin.site.urls),
     path('summernot/', include('django_summernote.urls'))
 ]

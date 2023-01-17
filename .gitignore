@@ -1,5 +1,8 @@
+# database
 db.sqlite3
-local_settings.py
 
+#vscode settings
 .vscode
 vscode/
+
+.pytest_cache

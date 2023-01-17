@@ -9,4 +9,5 @@ class CommentAdmin(admin.ModelAdmin):
     list_editable = ('comment_publicated',)
     list_display_link = ('id', 'comment_name', 'comment_email',)
 
+
 admin.site.register(Comment, CommentAdmin)
