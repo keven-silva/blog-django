@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'posts.templatetags',
     'django_seed',
     'django_summernote',
     # myapps
@@ -144,9 +145,3 @@ MESSAGE_TAG = {
 }
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-# try:
-#     from .local_settings import *
-
-# except:
-#     pass

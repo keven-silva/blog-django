@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% load custom_filters %}
+
 {% block content %}
     <!-- CONTENT -->
     <div class="card-columns mt-4" >
@@ -23,7 +25,7 @@
                             <small class="text-muted">
                                 {{ post.publication_date|naturalday|title }}
                                 | 
-                                {{ post.comment_numbers }} comentário(s)
+                                {{ post.comment_numbers | plural_comments}}
                                 |
                                 {{ post.category_post }}</small>
                         </p>
