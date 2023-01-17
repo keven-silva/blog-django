@@ -7,15 +7,18 @@
             {% include 'partial/_head.html' %}
         </head>
         <body>
-            {% include 'partial/_nav.html' %}
+            <div class="menu">
+                {% include 'partial/_nav.html' %}
+            </div>
             <!-- Page Content -->
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="row" id="cards">
+                    <div class="col-lg-12 ">
                         {% block content %}{% endblock  %}
                     </div>
                 </div>
             </div>
-            {% include 'partial/_footer.html' %}
         </body>
-    </html>
+        
+        {% include 'partial/_footer.html' %}
+</html>

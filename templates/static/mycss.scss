@@ -1,0 +1,19 @@
+@use 'base';
+
+
+.dark-gray {
+    background-color: base.$color-background;
+}
+
+.dark-blue {
+    background-color: base.$color-primary;
+    color: whitesmoke !important;
+}
+
+.dark-blue:hover {
+    background-color:#0c0c53 !important;
+}
+
+.menu {
+    background-color: base.$color-primary;
+}
