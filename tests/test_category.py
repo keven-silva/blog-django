@@ -1,6 +1,7 @@
 from django.test import TestCase
 from utils.base_url import get_url
 from category.models import Category
+from unittest.mock import patch
 
 
 class TestCategory(TestCase):
@@ -16,10 +17,13 @@ class TestCategory(TestCase):
         api_url = get_url()
         response = self.client.get(f'{api_url}/category/django', verify=False)
 
-        self.assertEqual(
-            200,
-            response.status_code
-        )
+        with patch('requests.get') as fake_quest:
+            fake_quest.return_value.ok = False
+
+            self.assertEqual(
+                200,
+                response.status_code
+            )
 
     def test_view_uri_python(self):
         api_url = get_url()
