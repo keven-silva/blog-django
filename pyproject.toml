@@ -16,6 +16,8 @@ psycopg2-binary = "^2.9.5"
 requests = "^2.28.2"
 pytest-django = "^4.5.2"
 pytest-cov = "^4.0.0"
+django-crispy-forms = "^1.14.0"
+django-axes = "^5.40.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
